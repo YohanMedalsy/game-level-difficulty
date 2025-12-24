@@ -1,0 +1,71 @@
+# Core dependencies
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+
+# Machine learning
+scikit-learn>=1.3.0
+lightgbm>=4.0.0
+
+# Vowpal Wabbit
+# NOTE: For Python 3.10/3.11, vowpalwabbit 9.8.0+ works great with pre-built wheels!
+# For Python 3.12, use 9.5.0 or 9.6.0 (9.8.0+ requires Boost)
+# Python 3.10/3.11 is recommended for full VW 9.8.0+ support with SquareCB
+vowpalwabbit>=9.8.0  # Python 3.10/3.11 compatible (has SquareCB!)
+
+# Hyperparameter optimization
+optuna>=3.3.0
+optuna-dashboard>=0.13.0  # For visualization
+
+# Configuration
+# NOTE: For Python 3.10/3.11, pyyaml 6.0 works great!
+# For Python 3.12, use 5.4.1 (build tools not available)
+pyyaml>=6.0  # Python 3.10/3.11 compatible
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.15.0
+
+# Progress bars
+tqdm>=4.65.0
+
+# Job parallelization
+joblib>=1.3.0
+
+# FastAPI for inference service (Phase 5)
+fastapi>=0.100.0
+uvicorn[standard]>=0.23.0
+pydantic>=2.0.0
+
+# Monitoring (Phase 6)
+prometheus-client>=0.17.0
+
+# Redis (Phase 5)
+redis>=5.0.0
+
+# Data loading (Delta/Parquet)
+deltalake>=0.15.0
+# NOTE: For Python 3.10/3.11, use pyarrow 12.0.0 (works great!)
+# For Python 3.12, use pyarrow 11.0.0 (build dependencies not available)
+pyarrow>=12.0.0  # Python 3.10/3.11 compatible
+
+# Snowflake connector
+# NOTE: For Python 3.10+, use 2.8.0+ (2.7.0 requires NumPy 1.19.4 which doesn't support Python 3.10)
+# For Python 3.12, use 2.7.0 with pyarrow 11.0.0
+# For Python 3.10/3.11, use 2.8.0+ with pyarrow 12.0.0
+snowflake-connector-python>=2.8.0  # Python 3.10+ compatible
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Development
+black>=23.7.0
+flake8>=6.1.0
+mypy>=1.5.0
+ipython>=8.14.0
+jupyter>=1.0.0
+
+# Optional: GPU support for faster training
+# torch>=2.0.0  # Uncomment if using GPU

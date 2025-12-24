@@ -1,0 +1,5 @@
+{
+    "host": "YOUR_REDIS_HOST",
+    "port": 6380,
+    "key": "YOUR_REDIS_KEY"
+}

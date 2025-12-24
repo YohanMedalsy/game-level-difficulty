@@ -1,0 +1,3 @@
+Metric,Value,Std,Source
+OPE Uniform Baseline (DR),1234.86,1006.6,difficulty_ope_daily_correct.py
+VW Model (DR),2856.265632230592,0.0,validate_vw_policy

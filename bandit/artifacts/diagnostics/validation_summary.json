@@ -1,0 +1,54 @@
+{
+  "ess_ratio": 0.00023083234591060782,
+  "alerts": {
+    "INFO": {
+      "ess_ratio_near_threshold": false
+    },
+    "WARNING": {
+      "low_ess": true,
+      "high_clipping": false,
+      "coverage_warn": false
+    },
+    "ERROR": {
+      "critical_ess": true,
+      "coverage_fail": false
+    }
+  },
+  "extreme_weights": {
+    "count_w_gt_100": 136,
+    "max_weight": 13957.254079416922,
+    "pct_clipped_at_100": 0.0
+  },
+  "coverage": {
+    "n_examples": 126986,
+    "counts": {
+      "Easierer": 671,
+      "Easier": 9249,
+      "Same": 105079,
+      "Harder": 11450,
+      "Harderer": 537
+    },
+    "percent": {
+      "Easierer": 0.528404706030586,
+      "Easier": 7.283480068668988,
+      "Same": 82.7484919597436,
+      "Harder": 9.016742003055453,
+      "Harderer": 0.42288126250137814
+    },
+    "arm_balance": {
+      "entropy": 0.6152606618497852,
+      "std_dev": 0.3156618976046252,
+      "rare_arms": [
+        "Easierer",
+        "Harderer"
+      ],
+      "balance_index": 0.3822829430675398
+    },
+    "user_id_parsing": {
+      "success_rate": 0.0,
+      "missing_count": 126986
+    }
+  },
+  "coverage_min_count": 537,
+  "vw_policy_dr": 2856.265632230592,
+  "passed_validation": 

@@ -1,0 +1,40 @@
+name: Sync to Databricks
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update Databricks Repo
+        env:
+          DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
+          DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
+          DATABRICKS_REPO_ID: ${{ secrets.DATABRICKS_REPO_ID }}
+        run: |
+          if [ -z "$DATABRICKS_HOST" ] || [ -z "$DATABRICKS_TOKEN" ] || [ -z "$DATABRICKS_REPO_ID" ]; then
+            echo "Error: Missing required secrets (DATABRICKS_HOST, DATABRICKS_TOKEN, DATABRICKS_REPO_ID)."
+            exit 1
+          fi
+          
+          echo "Triggering update for Repo ID: $DATABRICKS_REPO_ID on Host: $DATABRICKS_HOST"
+          
+          response=$(curl -s -w "%{http_code}" -X PATCH "$DATABRICKS_HOST/api/2.0/repos/$DATABRICKS_REPO_ID" \
+            -H "Authorization: Bearer $DATABRICKS_TOKEN" \
+            -H "Content-Type: application/json" \
+            -d '{"branch": "main"}')
+            
+          http_code=${response: -3}
+          body=${response::-3}
+          
+          if [ "$http_code" -ne 200 ]; then
+            echo "Failed to update repo. HTTP Code: $http_code"
+            echo "Response: $body"
+            exit 1
+          else
+            echo "Successfully updated repo."
+            echo "Response: $body"
+          fi

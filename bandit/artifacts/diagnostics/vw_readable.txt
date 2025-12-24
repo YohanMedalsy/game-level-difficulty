@@ -1,0 +1,96 @@
+Version 8.6.1
+Id 
+Min label:-3.25553e+08
+Max label:1.80082e+07
+bits:24
+lda:0
+0 ngram:
+0 skip:
+options: --hash_seed 0 --quadratic ua --quadratic sa --cb_explore_adf --cb_max_cost 1 --cb_min_cost 0 --epsilon 0.0112937 --lambda -1 --mellowness 0.1 --psi 1 --cb_adf --cb_type dr --csoaa_ldf multiline --csoaa_rank --link identity
+Checksum: 3031010807
+event_sum 0
+action_sum 0
+:0
+Constant:6523576:-0.536751
+a^arm:10063942:-0.130809
+a^delta:2026266:-0.55045
+c^feasible:5424022:-0.536751
+c^mult:5583972:-0.382673
+e^coin_balance_end:6694906:-0.00480856
+e^coin_balance_start:12505962:-0.00473331
+e^current_exchangespentamountcoins:15873842:-0.534728
+e^daily_spend_coins:6358426:-0.534728
+e^daily_spend_coins_min:5964722:-0.536318
+e^daily_spend_coins_std:3731812:-0.0484655
+e^daily_spend_coins_sum:9290102:-0.534728
+e^ewma_avg_fps_alpha5:9284942:-0.399869
+e^ewma_current_exchangespentamountcoins_alpha3:3112880:-0.533002
+e^ewma_current_exchangespentamountcoins_alpha5:10805380:-0.534269
+e^ewma_daily_spend_coins_alpha3:15036372:-0.533002
+e^ewma_daily_spend_coins_sum_alpha3:10737712:-0.533002
+e^ewma_daily_spend_coins_sum_alpha5:10082818:-0.534269
+e^ewma_fps_max_alpha1:749520:-0.389098
+e^ewma_fps_max_alpha3:12281250:-0.393153
+e^ewma_fps_max_alpha5:14638658:-0.39486
+e^ewma_fps_max_alpha7:12351198:-0.394907
+e^ewma_fps_min_alpha7:7953024:-0.415303
+e^ewma_resurrections_space_mean_alpha1:10287096:-0.0781473
+e^ewma_resurrections_space_mean_alpha3:5282748:-0.225608
+e^ewma_resurrections_space_std_alpha3:9139632:-0.257646
+e^ewma_rolling_completions_5d_alpha3:7782326:-0.121005
+e^ewma_spend_x_completion_alpha3:14226562:-0.531837
+e^ewma_time_remaining_min_alpha1:13630006:-0.121069
+e^extrabox_balance_change:16124006:-0.482323
+e^life_balance_change:6703206:-0.498261
+e^life_balance_start:11654044:-0.436795
+f^avg_effective_multiplier:13315596:-0.510317
+f^avg_fps:8781426:-0.434563
+f^avg_time_remaining:2270646:-0.265602
+f^current_spend:6065870:-0.149066
+f^daily_event_count:2235088:-0.0619941
+f^daily_spend_real_max:181330:-0.0575928
+f^daily_spend_real_mean:14366970:-0.0612049
+f^daily_spend_real_min:12387420:-0.0804887
+f^daily_spend_real_std:14543342:-0.0243782
+f^daily_spend_real_sum:11742550:-0.149066
+f^extrabox_boosters:3506436:-0.103533
+f^fps_max:7716910:-0.364774
+f^fps_min:4534600:-0.460408
+f^month:12644030:-0.472571
+f^resurrections_space_max:14246614:-0.0768994
+f^resurrections_space_mean:7682294:-0.275108
+f^resurrections_space_sum:480598:-0.0925743
+f^spend_x_completion:2329172:-0.534224
+f^time_remaining_min:9118516:-0.0503371
+f^time_remaining_std:13425656:-0.429092
+s^avg_level_duration:2672034:-0.433297
+s^avg_level_duration*a^arm:11963968:-0.100313
+s^avg_level_duration*a^delta:3274012:-0.188688
+s^current_avg_attemptperuser:373762:-0.0659052
+s^current_avg_attemptperuser*a^arm:6541152:-0.0109721
+s^current_avg_attemptperuser*a^delta:14988348:0.0198602
+s^distinct_levels_played:2900640:-0.150131
+s^distinct_levels_played*a^arm:3502502:-0.0398385
+s^distinct_levels_played*a^delta:11668218:-0.482735
+s^level_duration_min:7833436:-0.452247
+s^level_duration_min*a^arm:11765138:-0.0904062
+s^level_duration_min*a^delta:3473102:0.0668187
+s^levels_completed:16276668:-0.143102
+s^levels_completed*a^arm:6319026:-0.0390829
+s^levels_completed*a^delta:15143150:-0.453729
+s^levels_started:7489494:-0.166757
+s^levels_started*a^arm:8291748:-0.0447968
+s^levels_started*a^delta:16383736:-0.487331
+s^total_level_attempts:671808:-0.154765
+s^total_level_attempts*a^arm:12235910:-0.0350623
+s^total_level_attempts*a^delta:4050906:-0.267135
+t^day_of_month:6049854:-0.346154
+t^day_of_week:3619734:-0.42031
+t^ewma_day_of_month_alpha1:13628984:-0.419808
+t^is_weekend:16053096:-0.369242
+u^user_level_end:8606710:-0.119274
+u^user_level_end*a^arm:2407428:-0.0460956
+u^user_level_end*a^delta:10733400:-0.374593
+u^user_level_start:16254936:-0.117018
+u^user_level_start*a^arm:15583566:-0.0460246
+u^user_level_start*a^delta:6992402:-0.385315

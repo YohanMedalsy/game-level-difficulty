@@ -1,0 +1,7 @@
+# Ignore all Markdown files except README variants
+*.md
+!**/README.md
+!**/readme.md
+
+# macOS
+.DS_Store

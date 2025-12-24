@@ -1,0 +1,21 @@
+{
+  "n_examples": 126986,
+  "quantiles": {
+    "5": 0.0022983896095031425,
+    "50": 0.0024645322282036202,
+    "90": 0.011293700451748018,
+    "99": 1.0243583640071043
+  },
+  "clip_rates": {
+    "10.0": 0.004118564251177295,
+    "20.0": 0.002984580977430583,
+    "50.0": 0.0016852251429291419,
+    "100.0": 0.001070984202983006
+  },
+  "ess": 29.312476277804443,
+  "ess_ratio": 0.00023083234591060782,
+  "extreme_weights_count_50": 214,
+  "extreme_weights_count_100": 136,
+  "max_weight": 13957.254079416922,
+  "histogram_path": "/Workspace/Users/yohan.medalsy@spaceplay.games/ai/bandit/artifacts/diagnostics/weights_hist.png"
+}

@@ -1,0 +1,15 @@
+command:
+  - "python"
+  - "scripts/05_serve_redis_lookup.py"
+  - "--host"
+  - "0.0.0.0"
+  - "--port"
+  - "8000"
+
+env:
+  - name: REDIS_HOST
+    value: "YOUR_REDIS_HOST"
+  - name: REDIS_PORT
+    value: "6380"
+  - name: REDIS_KEY
+    value: "YOUR_REDIS_KEY"

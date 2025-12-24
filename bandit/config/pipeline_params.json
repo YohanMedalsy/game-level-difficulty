@@ -1,0 +1,33 @@
+{
+    "_comment": "Pipeline control config - edit this file to change Phase 0 behavior without modifying Snowflake",
+    "_usage": "Snowflake sends --date and --snowflake-table. All other params are loaded from this file.",
+    "_workflow": "Edit this file -> push to GitHub -> pull to Databricks",
+
+    "inference": true,
+    "output_format": "delta",
+    "partition_column": "session_date",
+    "out_dir": "dbfs:/mnt/features/daily_features_inference.delta",
+    "checkpoint_dir": "dbfs:/mnt/bandit/checkpoints",
+    "use_sf_connector": true,
+    "write_mode": "replaceWhere",
+    "skip_advanced_materialization": true,
+    "skip_final_materialization": true,
+    "skip_checkpoint": true,
+    "final_write_partitions": 0,
+    "partitions_per_day": 1000,
+    "shuffle_partitions": 2000,
+    "write_partitions": 2000,
+    "max_records_per_file": 75000,
+    "local_dirs": "/dbfs/mnt/ssd1,/dbfs/mnt/ssd2",
+    "ewma_lookback_days": 30,
+
+    "trigger_phase5": true,
+    "skip_training": true,
+    "phase5_job_id": 899063372642667,
+    "phase6_job_id": 366820514032698,
+    "selected_features_path": "dbfs:/mnt/artifacts/selected_features_aug01_60.json",
+    "model_path": null,
+
+    "reason": "Initial deployment - model not yet in production. Set skip_training to false when ready to enable online learning.",
+    "last_updated": "2025-12-11"
+}
