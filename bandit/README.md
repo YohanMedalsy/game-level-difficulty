@@ -31,6 +31,16 @@ cd bandit
 pip install -r requirements.txt
 ```
 
+### Config setup
+
+Copy the example configs in `bandit/config/` to matching `.json` files and fill in your values (the real files are gitignored):
+
+```bash
+cp bandit/config/cloudflare_kv_config.example.json bandit/config/cloudflare_kv_config.json
+cp bandit/config/redis_config.example.json bandit/config/redis_config.json
+cp bandit/config/pipeline_params.example.json bandit/config/pipeline_params.json
+```
+
 ### Run Full Pipeline
 
 ```bash
