@@ -5,3 +5,12 @@
 
 # macOS
 .DS_Store
+
+# Large runtime/generated directories
+logs/
+artifacts/
+data/
+
+# Local config files (keep .example templates tracked)
+bandit/config/*.json
+!bandit/config/*.example.json
